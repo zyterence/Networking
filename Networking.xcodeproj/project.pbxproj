@@ -14,6 +14,7 @@
 		DDAB1F6126EAF3320049C72D /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5D26EAF3320049C72D /* HTTPResponse.swift */; };
 		DDAB1F6226EAF3320049C72D /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5E26EAF3320049C72D /* HTTPRequest.swift */; };
 		DDAB1F6326EAF3320049C72D /* ServerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5F26EAF3320049C72D /* ServerEnvironment.swift */; };
+		DDAB1F6526EAF8E70049C72D /* HTTPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F6426EAF8E70049C72D /* HTTPResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		DDAB1F5D26EAF3320049C72D /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 		DDAB1F5E26EAF3320049C72D /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		DDAB1F5F26EAF3320049C72D /* ServerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerEnvironment.swift; sourceTree = "<group>"; };
+		DDAB1F6426EAF8E70049C72D /* HTTPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				DDAB1F5E26EAF3320049C72D /* HTTPRequest.swift */,
 				DDAB1F5D26EAF3320049C72D /* HTTPResponse.swift */,
 				DDAB1F5F26EAF3320049C72D /* ServerEnvironment.swift */,
+				DDAB1F6426EAF8E70049C72D /* HTTPResult.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDAB1F6226EAF3320049C72D /* HTTPRequest.swift in Sources */,
+				DDAB1F6526EAF8E70049C72D /* HTTPResult.swift in Sources */,
 				DDAB1F6126EAF3320049C72D /* HTTPResponse.swift in Sources */,
 				DDAB1F6326EAF3320049C72D /* ServerEnvironment.swift in Sources */,
 				DDAB1F6026EAF3320049C72D /* HTTPLoader.swift in Sources */,
