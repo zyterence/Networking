@@ -10,6 +10,10 @@
 		DDAB1F4B26EAF30F0049C72D /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB1F4126EAF30F0049C72D /* Networking.framework */; };
 		DDAB1F5026EAF30F0049C72D /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F4F26EAF30F0049C72D /* NetworkingTests.swift */; };
 		DDAB1F5226EAF30F0049C72D /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAB1F4426EAF30F0049C72D /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDAB1F6026EAF3320049C72D /* HTTPLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5C26EAF3320049C72D /* HTTPLoader.swift */; };
+		DDAB1F6126EAF3320049C72D /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5D26EAF3320049C72D /* HTTPResponse.swift */; };
+		DDAB1F6226EAF3320049C72D /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5E26EAF3320049C72D /* HTTPRequest.swift */; };
+		DDAB1F6326EAF3320049C72D /* ServerEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB1F5F26EAF3320049C72D /* ServerEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		DDAB1F4A26EAF30F0049C72D /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAB1F4F26EAF30F0049C72D /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		DDAB1F5126EAF30F0049C72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAB1F5C26EAF3320049C72D /* HTTPLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPLoader.swift; sourceTree = "<group>"; };
+		DDAB1F5D26EAF3320049C72D /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		DDAB1F5E26EAF3320049C72D /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		DDAB1F5F26EAF3320049C72D /* ServerEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		DDAB1F4326EAF30F0049C72D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DDAB1F5B26EAF31E0049C72D /* Source */,
 				DDAB1F4426EAF30F0049C72D /* Networking.h */,
 				DDAB1F4526EAF30F0049C72D /* Info.plist */,
 			);
@@ -84,6 +93,17 @@
 				DDAB1F5126EAF30F0049C72D /* Info.plist */,
 			);
 			path = NetworkingTests;
+			sourceTree = "<group>";
+		};
+		DDAB1F5B26EAF31E0049C72D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DDAB1F5C26EAF3320049C72D /* HTTPLoader.swift */,
+				DDAB1F5E26EAF3320049C72D /* HTTPRequest.swift */,
+				DDAB1F5D26EAF3320049C72D /* HTTPResponse.swift */,
+				DDAB1F5F26EAF3320049C72D /* ServerEnvironment.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +167,7 @@
 				TargetAttributes = {
 					DDAB1F4026EAF30F0049C72D = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					DDAB1F4926EAF30F0049C72D = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAB1F6226EAF3320049C72D /* HTTPRequest.swift in Sources */,
+				DDAB1F6126EAF3320049C72D /* HTTPResponse.swift in Sources */,
+				DDAB1F6326EAF3320049C72D /* ServerEnvironment.swift in Sources */,
+				DDAB1F6026EAF3320049C72D /* HTTPLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		DDAB1F5626EAF30F0049C72D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J5K6H2K8HR;
@@ -357,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codies.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +392,7 @@
 		DDAB1F5726EAF30F0049C72D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J5K6H2K8HR;
@@ -389,6 +417,7 @@
 		DDAB1F5926EAF30F0049C72D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5K6H2K8HR;
 				INFOPLIST_FILE = NetworkingTests/Info.plist;
@@ -407,6 +436,7 @@
 		DDAB1F5A26EAF30F0049C72D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5K6H2K8HR;
 				INFOPLIST_FILE = NetworkingTests/Info.plist;
