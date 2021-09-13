@@ -8,6 +8,8 @@
 import Foundation
 
 struct ServerEnvironment {
+    public static let defaultOptionValue: ServerEnvironment? = nil
+    
     public var host: String
     public var pathPrefix: String
     public var headers: [String: String]
